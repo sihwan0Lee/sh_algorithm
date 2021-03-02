@@ -7,6 +7,9 @@ def solution(new_id):
             answer.append(i)
 
     print(answer)
+    if answer[0] == ".":
+        answer = answer[1:]
+    elif
 
 
 print(solution("...!@BaT#*..y.abcdefghijklm"))

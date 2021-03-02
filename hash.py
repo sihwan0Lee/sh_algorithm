@@ -1,3 +1,7 @@
+# 공부 자료 및 함수 출처 (https://www.fun-coding.org/Chapter09-hashtable-live.html)
+# 문제 출처: 프로그래머스
+
+
 # Hash Table
 # key 에 데이터(value)를 저장하는 데이터 구조
 # 파이썬은 딕셔너리 타입을 사용하면 되므로 별도로 해쉬를 구현 안해도됌.
@@ -46,3 +50,5 @@ save_data('dave', '01020202020')
 save_data('andy', '01030303030')
 print(read_data('dave'))
 print(hash_table)
+
+

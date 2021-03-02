@@ -1,15 +1,11 @@
-def solution(number, k):
-    stack = [number[0]]
-    print(stack)
-    for num in number[1:]:
-        while len(stack) > 0 and stack[-1] < num and k > 0:
-            k -= 1
-            print(stack[-1])
-            stack.pop()
-        stack.append(num)
-    if k != 0:
-        stack = stack[:-k]
-    return ''.join(stack)
+N, K = map(int, input().split())
+coin = [1, 5, 10, 50, 100, 500, 1000, 5000, 10000, 50000]
+count = 0
+for i in range(len(coin)):
 
-
-print(solution("4177252841", 4))
+    if coin[i] > K:
+        if coin[i-1] <= K:
+            K = K - (coin[i-1])
+            print(K)
+            count += 1
+print(count)

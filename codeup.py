@@ -14,7 +14,7 @@ def solution(N, stages):
         else:
             fail[i] = 0
     print(fail)
-    return sorted(fail, key=lambda z: fail[z], reverse=True)
+    return sorted(fail, key=lambda   z: fail[z], reverse=True)
 
 
 print(solution(5, [2, 1, 2, 6, 2, 4, 3, 3]))
